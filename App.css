@@ -1,0 +1,237 @@
+
+
+.btn:hover {
+    border-width: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid;
+    border-color: rgb(101, 235, 101);
+    cursor: pointer;
+}
+
+
+.nav-btn, .logo, .dropdown-btn{
+    padding: 10px;
+    background-color:rgb(48, 38, 38);
+    color: white;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 0;
+    transition: 0.1s all;
+}
+
+.logo{
+    margin-right: 100px;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+
+}
+
+.navbar-arr{    
+    background-color: rgb(48, 38, 38);
+    margin: 0px;
+
+}
+
+.more-btn-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right:10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-btn{
+    min-width: 6rem;
+    
+}
+
+.dropdown-div{
+    position: absolute;
+    top: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-div{
+    display: flex;
+}
+.search{
+    color: white;
+    padding: 10px;
+    background-color:rgb(48, 38, 38);
+    margin-right: 20px;
+    margin-left: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    
+}
+
+.carousel-arr{
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.carousel-div{
+    padding-top: 10rem;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.carousel-heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.carousel-slide {
+    height: 60vw;
+    max-height: 500px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide.active-slide {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-slide {
+    display: block;
+    overflow: hidden;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        padding: 50px 10px;
+    }
+
+    .carousel-slide {
+        height: 80vw;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-slide {
+        height: 100vw;
+        max-height: 300px;
+    }
+}
+
+/* Arrow Controls */
+.custom-slider .slick-prev,
+.custom-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 24px;
+    cursor: pointer;
+    
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.custom-slider .slick-prev {
+    left: 20px;
+}
+
+.custom-slider .slick-next {
+    right: 20px;
+}
+
+.custom-slider .slick-prev:hover,
+.custom-slider .slick-next:hover {
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
